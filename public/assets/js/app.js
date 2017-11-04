@@ -50,6 +50,8 @@ $(document).ready(function(){
                         '  </div>' +
                         '</li>'
                     )
+
+                    $('#strongRes').text(query);
                 }
             }
         })

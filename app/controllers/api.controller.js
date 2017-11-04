@@ -8,8 +8,9 @@ exports.results = function(req, res) {
         db.getCollection('searches').insert({term: query});
         db.saveDatabase();
 
-        twClient.get('search/tweet', {q: query}, function(err, tweets, response) {
+        twClient.get('search/tweets', {q: query}, function(err, tweets, response) {
             res.json(tweets);
+
         })
     } else {
         res.send('Error');
