@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/pabloimrik17/node-twitter-app#readme",
   "dependencies": {
+    "dotenv": "^4.0.0",
+    "ejs": "^2.5.7",
     "express": "^4.16.2",
     "lokijs": "^1.5.1",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "twitter": "^1.7.1"
   }
 }

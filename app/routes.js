@@ -6,9 +6,7 @@ module.exports = function (app) {
 
     app.get('/top', core.top);
 
-    app.get('/results', function (req, res) {
-        res.send('Results page');
-    });
+    app.get('/results', core.results);
 
     app.get('/api/results', function (req, res) {
         res.json({message: 'API JSON page'});

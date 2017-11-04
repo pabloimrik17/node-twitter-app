@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 var app = require('./app/server');
 const _PORT_ = 8080;
 
