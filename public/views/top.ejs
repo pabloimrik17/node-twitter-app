@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <% include ./partials/head %>
+</head>
+<body>
+<header>
+    <% include ./partials/header %>
+</header>
+
+<div class="container">
+    <div class="jumbotron tex-center">
+        <h1>Top Terms</h1>
+    </div>
+    <% terms.forEach(function(query, index) { %>
+    <div class="col-sm-6 panel">
+        <a href="/results?q=<%= query.term %>" class="btn btn-block btn-<%= query.style %> btn-lg">
+            <%= query.term %>
+        </a>
+    </div>
+    <% }) %>
+
+</div>
+
+<footer>
+    <% include ./partials/footer.ejs %>
+</footer>
+</body>
+</html>

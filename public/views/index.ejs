@@ -24,7 +24,7 @@
 
             <% searches.forEach(function(query, index) { %>
                 <div class="col-sm-6 panel">
-                    <a href="/results?q<%= query.term %>" class="btn btn-block btn-default btn-lg"><%= query.term %></a>
+                    <a href="/results?q=<%= query.term %>" class="btn btn-block btn-default btn-lg"><%= query.term %></a>
                 </div>
             <% }) %>
 
