@@ -1,4 +1,5 @@
 var core = require('./controllers/core.controller');
+var api = require('./controllers/api.controller');
 
 module.exports = function (app) {
 
@@ -8,7 +9,5 @@ module.exports = function (app) {
 
     app.get('/results', core.results);
 
-    app.get('/api/results', function (req, res) {
-        res.json({message: 'API JSON page'});
-    });
+    app.get('/api/results', api.results);
 };
